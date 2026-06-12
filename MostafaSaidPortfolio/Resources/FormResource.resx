@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Auth Form Labels -->
+  <data name="Auth_Username" xml:space="preserve"><value>Username</value></data>
+  <data name="Auth_Email" xml:space="preserve"><value>Email Address</value></data>
+  <data name="Auth_Password" xml:space="preserve"><value>Password</value></data>
+  <data name="Auth_ConfirmPassword" xml:space="preserve"><value>Confirm Password</value></data>
+  <data name="Auth_RememberMe" xml:space="preserve"><value>Remember me</value></data>
+  <data name="Auth_ForgotPassword" xml:space="preserve"><value>Forgot your password?</value></data>
+
+  <!-- Blog Form Labels -->
+  <data name="Blog_SearchPlaceholder" xml:space="preserve"><value>Search articles...</value></data>
+  <data name="Blog_FilterByCategory" xml:space="preserve"><value>Filter by category</value></data>
+  <data name="Blog_FilterByTag" xml:space="preserve"><value>Filter by tag</value></data>
+
+  <!-- Comment Form Labels -->
+  <data name="Comment_Name" xml:space="preserve"><value>Your Name</value></data>
+  <data name="Comment_Email" xml:space="preserve"><value>Your Email</value></data>
+  <data name="Comment_Website" xml:space="preserve"><value>Website (optional)</value></data>
+  <data name="Comment_Content" xml:space="preserve"><value>Comment</value></data>
+  <data name="Comment_PostComment" xml:space="preserve"><value>Post Comment</value></data>
+
+  <!-- Newsletter Form Labels -->
+  <data name="Newsletter_Email" xml:space="preserve"><value>Enter your email</value></data>
+  <data name="Newsletter_Subscribe" xml:space="preserve"><value>Subscribe</value></data>
+
+  <!-- Search Form -->
+  <data name="Search_Placeholder" xml:space="preserve"><value>Search projects, articles...</value></data>
+  <data name="Search_Button" xml:space="preserve"><value>Search</value></data>
+
+</root>

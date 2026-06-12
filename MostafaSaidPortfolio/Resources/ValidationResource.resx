@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Required Field Validation -->
+  <data name="Val_Required" xml:space="preserve"><value>This field is required.</value></data>
+  <data name="Val_RequiredField" xml:space="preserve"><value>{0} is required.</value></data>
+
+  <!-- Email Validation -->
+  <data name="Val_InvalidEmail" xml:space="preserve"><value>Please enter a valid email address.</value></data>
+
+  <!-- Length Validation -->
+  <data name="Val_MinLength" xml:space="preserve"><value>Must be at least {0} characters.</value></data>
+  <data name="Val_MaxLength" xml:space="preserve"><value>Cannot exceed {0} characters.</value></data>
+  <data name="Val_StringLength" xml:space="preserve"><value>Must be between {0} and {1} characters.</value></data>
+
+  <!-- Number Validation -->
+  <data name="Val_InvalidNumber" xml:space="preserve"><value>Please enter a valid number.</value></data>
+  <data name="Val_Range" xml:space="preserve"><value>Value must be between {0} and {1}.</value></data>
+
+  <!-- Pattern/Format Validation -->
+  <data name="Val_InvalidFormat" xml:space="preserve"><value>Invalid format.</value></data>
+
+  <!-- Password Validation -->
+  <data name="Val_PasswordWeak" xml:space="preserve"><value>Password is too weak.</value></data>
+  <data name="Val_PasswordMismatch" xml:space="preserve"><value>Passwords do not match.</value></data>
+
+  <!-- Comparison Validation -->
+  <data name="Val_Compare" xml:space="preserve"><value>{0} and {1} do not match.</value></data>
+
+  <!-- Unique/Duplicate Validation -->
+  <data name="Val_Duplicate" xml:space="preserve"><value>This {0} already exists.</value></data>
+  <data name="Val_EmailExists" xml:space="preserve"><value>Email already registered.</value></data>
+
+  <!-- Not Found Validation -->
+  <data name="Val_NotFound" xml:space="preserve"><value>{0} not found.</value></data>
+
+  <!-- Authorization Validation -->
+  <data name="Val_Unauthorized" xml:space="preserve"><value>You are not authorized to perform this action.</value></data>
+  <data name="Val_AccessDenied" xml:space="preserve"><value>Access denied.</value></data>
+
+</root>

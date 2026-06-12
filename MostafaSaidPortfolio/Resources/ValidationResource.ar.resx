@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Required Field Validation -->
+  <data name="Val_Required" xml:space="preserve"><value>هذا الحقل مطلوب.</value></data>
+  <data name="Val_RequiredField" xml:space="preserve"><value>{0} مطلوب.</value></data>
+
+  <!-- Email Validation -->
+  <data name="Val_InvalidEmail" xml:space="preserve"><value>يرجى إدخال عنوان بريد إلكتروني صحيح.</value></data>
+
+  <!-- Length Validation -->
+  <data name="Val_MinLength" xml:space="preserve"><value>يجب أن يكون على الأقل {0} أحرف.</value></data>
+  <data name="Val_MaxLength" xml:space="preserve"><value>لا يمكن أن يتجاوز {0} أحرف.</value></data>
+  <data name="Val_StringLength" xml:space="preserve"><value>يجب أن يكون بين {0} و {1} أحرف.</value></data>
+
+  <!-- Number Validation -->
+  <data name="Val_InvalidNumber" xml:space="preserve"><value>يرجى إدخال رقم صحيح.</value></data>
+  <data name="Val_Range" xml:space="preserve"><value>القيمة يجب أن تكون بين {0} و {1}.</value></data>
+
+  <!-- Pattern/Format Validation -->
+  <data name="Val_InvalidFormat" xml:space="preserve"><value>صيغة غير صحيحة.</value></data>
+
+  <!-- Password Validation -->
+  <data name="Val_PasswordWeak" xml:space="preserve"><value>كلمة المرور ضعيفة جداً.</value></data>
+  <data name="Val_PasswordMismatch" xml:space="preserve"><value>كلمات المرور غير متطابقة.</value></data>
+
+  <!-- Comparison Validation -->
+  <data name="Val_Compare" xml:space="preserve"><value>{0} و {1} غير متطابقين.</value></data>
+
+  <!-- Unique/Duplicate Validation -->
+  <data name="Val_Duplicate" xml:space="preserve"><value>هذا {0} موجود بالفعل.</value></data>
+  <data name="Val_EmailExists" xml:space="preserve"><value>البريد الإلكتروني مسجل بالفعل.</value></data>
+
+  <!-- Not Found Validation -->
+  <data name="Val_NotFound" xml:space="preserve"><value>{0} غير موجود.</value></data>
+
+  <!-- Authorization Validation -->
+  <data name="Val_Unauthorized" xml:space="preserve"><value>أنت غير مخول لإجراء هذا الإجراء.</value></data>
+  <data name="Val_AccessDenied" xml:space="preserve"><value>تم رفض الوصول.</value></data>
+
+</root>

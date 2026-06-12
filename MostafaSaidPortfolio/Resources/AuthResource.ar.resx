@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Login Page -->
+  <data name="Login_Title" xml:space="preserve"><value>تسجيل الدخول</value></data>
+  <data name="Login_Description" xml:space="preserve"><value>أهلاً بعودتك! يرجى تسجيل الدخول إلى حسابك.</value></data>
+  <data name="Login_EmailLabel" xml:space="preserve"><value>البريد الإلكتروني</value></data>
+  <data name="Login_PasswordLabel" xml:space="preserve"><value>كلمة المرور</value></data>
+  <data name="Login_RememberMe" xml:space="preserve"><value>تذكرني</value></data>
+  <data name="Login_ForgotPassword" xml:space="preserve"><value>هل نسيت كلمة المرور؟</value></data>
+  <data name="Login_Button" xml:space="preserve"><value>تسجيل الدخول</value></data>
+  <data name="Login_NoAccount" xml:space="preserve"><value>ليس لديك حساب؟</value></data>
+  <data name="Login_Register" xml:space="preserve"><value>أنشئ واحداً هنا</value></data>
+  <data name="Login_InvalidCredentials" xml:space="preserve"><value>بريد إلكتروني أو كلمة مرور غير صحيحة.</value></data>
+
+  <!-- Register Page -->
+  <data name="Register_Title" xml:space="preserve"><value>إنشاء حساب</value></data>
+  <data name="Register_Description" xml:space="preserve"><value>انضم إلينا اليوم وابدأ رحلتك.</value></data>
+  <data name="Register_NameLabel" xml:space="preserve"><value>الاسم الكامل</value></data>
+  <data name="Register_EmailLabel" xml:space="preserve"><value>البريد الإلكتروني</value></data>
+  <data name="Register_PasswordLabel" xml:space="preserve"><value>كلمة المرور</value></data>
+  <data name="Register_ConfirmPasswordLabel" xml:space="preserve"><value>تأكيد كلمة المرور</value></data>
+  <data name="Register_TermsLabel" xml:space="preserve"><value>أوافق على الشروط والأحكام</value></data>
+  <data name="Register_Button" xml:space="preserve"><value>إنشاء حساب</value></data>
+  <data name="Register_AlreadyAccount" xml:space="preserve"><value>هل لديك حساب بالفعل؟</value></data>
+  <data name="Register_SignIn" xml:space="preserve"><value>سجل الدخول هنا</value></data>
+
+  <!-- Password Reset -->
+  <data name="PasswordReset_Title" xml:space="preserve"><value>إعادة تعيين كلمة المرور</value></data>
+  <data name="PasswordReset_Description" xml:space="preserve"><value>أدخل بريدك الإلكتروني لتلقي رابط إعادة تعيين كلمة المرور.</value></data>
+  <data name="PasswordReset_EmailLabel" xml:space="preserve"><value>البريد الإلكتروني</value></data>
+  <data name="PasswordReset_SendLink" xml:space="preserve"><value>إرسال رابط إعادة التعيين</value></data>
+  <data name="PasswordReset_CheckEmail" xml:space="preserve"><value>تحقق من بريدك الإلكتروني للحصول على رابط إعادة تعيين.</value></data>
+
+  <!-- Profile Page -->
+  <data name="Profile_Title" xml:space="preserve"><value>ملفي الشخصي</value></data>
+  <data name="Profile_EditProfile" xml:space="preserve"><value>تعديل الملف الشخصي</value></data>
+  <data name="Profile_ChangePassword" xml:space="preserve"><value>تغيير كلمة المرور</value></data>
+  <data name="Profile_DeleteAccount" xml:space="preserve"><value>حذف الحساب</value></data>
+  <data name="Profile_UpdateSuccess" xml:space="preserve"><value>تم تحديث الملف الشخصي بنجاح!</value></data>
+
+</root>

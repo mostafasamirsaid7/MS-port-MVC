@@ -85,12 +85,12 @@
 
                     <div class="grid sm:grid-cols-2 gap-5">
                         <div>
-                            <label asp-for="Name" class="form-label block mb-1.5">@L["Contact_FullName"]</label>
+                            <label asp-for="Name" class="form-label block mb-1.5">@FL["Auth_Username"]</label>
                             <input asp-for="Name" class="form-input" placeholder="John Doe"/>
                             <span asp-validation-for="Name" class="text-red-500 text-xs mt-1 block"></span>
                         </div>
                         <div>
-                            <label asp-for="Email" class="form-label block mb-1.5">@L["Contact_EmailAddress"]</label>
+                            <label asp-for="Email" class="form-label block mb-1.5">@FL["Auth_Email"]</label>
                             <input asp-for="Email" class="form-input" placeholder="john@example.com"/>
                             <span asp-validation-for="Email" class="text-red-500 text-xs mt-1 block"></span>
                         </div>

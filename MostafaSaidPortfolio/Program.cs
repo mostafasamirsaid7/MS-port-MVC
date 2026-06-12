@@ -38,6 +38,18 @@ builder.Services.AddCustomServices();
 // Localization — resource files live in Resources/
 builder.Services.AddLocalization(opts => opts.ResourcesPath = "Resources");
 
+// Register all resource types for dependency injection
+builder.Services.AddScoped<IStringLocalizer<SharedResource>>(sp =>
+    sp.GetRequiredService<IStringLocalizerFactory>().Create("SharedResource", null));
+builder.Services.AddScoped<IStringLocalizer<FormResource>>(sp =>
+    sp.GetRequiredService<IStringLocalizerFactory>().Create("FormResource", null));
+builder.Services.AddScoped<IStringLocalizer<AuthResource>>(sp =>
+    sp.GetRequiredService<IStringLocalizerFactory>().Create("AuthResource", null));
+builder.Services.AddScoped<IStringLocalizer<ValidationResource>>(sp =>
+    sp.GetRequiredService<IStringLocalizerFactory>().Create("ValidationResource", null));
+builder.Services.AddScoped<IStringLocalizer<ErrorResource>>(sp =>
+    sp.GetRequiredService<IStringLocalizerFactory>().Create("ErrorResource", null));
+
 // Supported cultures
 var supportedCultures = new[] { new CultureInfo("en"), new CultureInfo("ar") };
 builder.Services.Configure<RequestLocalizationOptions>(opts =>

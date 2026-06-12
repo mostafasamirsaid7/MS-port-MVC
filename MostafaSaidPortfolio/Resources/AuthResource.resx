@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Login Page -->
+  <data name="Login_Title" xml:space="preserve"><value>Sign In</value></data>
+  <data name="Login_Description" xml:space="preserve"><value>Welcome back! Please sign in to your account.</value></data>
+  <data name="Login_EmailLabel" xml:space="preserve"><value>Email Address</value></data>
+  <data name="Login_PasswordLabel" xml:space="preserve"><value>Password</value></data>
+  <data name="Login_RememberMe" xml:space="preserve"><value>Remember me</value></data>
+  <data name="Login_ForgotPassword" xml:space="preserve"><value>Forgot password?</value></data>
+  <data name="Login_Button" xml:space="preserve"><value>Sign In</value></data>
+  <data name="Login_NoAccount" xml:space="preserve"><value>Don't have an account?</value></data>
+  <data name="Login_Register" xml:space="preserve"><value>Create one here</value></data>
+  <data name="Login_InvalidCredentials" xml:space="preserve"><value>Invalid email or password.</value></data>
+
+  <!-- Register Page -->
+  <data name="Register_Title" xml:space="preserve"><value>Create Account</value></data>
+  <data name="Register_Description" xml:space="preserve"><value>Join us today and start your journey.</value></data>
+  <data name="Register_NameLabel" xml:space="preserve"><value>Full Name</value></data>
+  <data name="Register_EmailLabel" xml:space="preserve"><value>Email Address</value></data>
+  <data name="Register_PasswordLabel" xml:space="preserve"><value>Password</value></data>
+  <data name="Register_ConfirmPasswordLabel" xml:space="preserve"><value>Confirm Password</value></data>
+  <data name="Register_TermsLabel" xml:space="preserve"><value>I agree to the terms and conditions</value></data>
+  <data name="Register_Button" xml:space="preserve"><value>Create Account</value></data>
+  <data name="Register_AlreadyAccount" xml:space="preserve"><value>Already have an account?</value></data>
+  <data name="Register_SignIn" xml:space="preserve"><value>Sign in here</value></data>
+
+  <!-- Password Reset -->
+  <data name="PasswordReset_Title" xml:space="preserve"><value>Reset Password</value></data>
+  <data name="PasswordReset_Description" xml:space="preserve"><value>Enter your email to receive a password reset link.</value></data>
+  <data name="PasswordReset_EmailLabel" xml:space="preserve"><value>Email Address</value></data>
+  <data name="PasswordReset_SendLink" xml:space="preserve"><value>Send Reset Link</value></data>
+  <data name="PasswordReset_CheckEmail" xml:space="preserve"><value>Check your email for a password reset link.</value></data>
+
+  <!-- Profile Page -->
+  <data name="Profile_Title" xml:space="preserve"><value>My Profile</value></data>
+  <data name="Profile_EditProfile" xml:space="preserve"><value>Edit Profile</value></data>
+  <data name="Profile_ChangePassword" xml:space="preserve"><value>Change Password</value></data>
+  <data name="Profile_DeleteAccount" xml:space="preserve"><value>Delete Account</value></data>
+  <data name="Profile_UpdateSuccess" xml:space="preserve"><value>Profile updated successfully!</value></data>
+
+</root>
