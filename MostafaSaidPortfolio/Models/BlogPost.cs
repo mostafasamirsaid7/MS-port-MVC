@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -9,37 +9,37 @@ namespace MostafaSaidPortfolio.Models
     {
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; } = string.Empty; // add this
-
+        public string Name { get; set; } = string.Empty;
 
         [Required]
         [MaxLength(300)]
-        public string Title { get; set; }= string.Empty;
+        public string Title { get; set; } = string.Empty;
 
         [Required]
-        public string Content { get; set; }
+        public string Content { get; set; } = string.Empty;
 
         [MaxLength(1000)]
-        public string Summary { get; set; }
+        public string Summary { get; set; } = string.Empty;
 
         [MaxLength(200)]
-        public string Slug { get; set; }
+        public string Slug { get; set; } = string.Empty;
 
         [MaxLength(200)]
-        public string MetaTitle { get; set; }
+        public string MetaTitle { get; set; } = string.Empty;
 
         [MaxLength(500)]
-        public string MetaDescription { get; set; }
+        public string MetaDescription { get; set; } = string.Empty;
 
         [MaxLength(500)]
-        public string? FeaturedImageUrl { get; set; } = string.Empty; // required
+        public string? FeaturedImageUrl { get; set; } = string.Empty;
+
         [ForeignKey("Category")]
-        public int CategoryId { get; set; }
-        public Category Category { get; set; }
+        public int? CategoryId { get; set; }
+        public Category? Category { get; set; }
 
         [ForeignKey("Author")]
-        public int AuthorId { get; set; }
-        public User Author { get; set; }
+        public int? AuthorId { get; set; }
+        public User? Author { get; set; }
 
         public int Status { get; set; } = 0;
         public DateTime? PublishedAt { get; set; }
@@ -55,10 +55,7 @@ namespace MostafaSaidPortfolio.Models
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
         public bool IsDeleted { get; set; } = false;
-        // Navigation property
         public ICollection<Tag> Tags { get; set; } = new List<Tag>();
-        // Add to existing BlogPost class
         public ICollection<Comment> Comments { get; set; } = new List<Comment>();
     }
-
 }

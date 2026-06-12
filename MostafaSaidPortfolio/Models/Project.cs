@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -11,30 +12,30 @@ namespace MostafaSaidPortfolio.Models
 
         [Required]
         [MaxLength(200)]
-        public string Title { get; set; }= string.Empty;
+        public string Title { get; set; } = string.Empty;
 
-        public string Description { get; set; }= string.Empty;
+        public string Description { get; set; } = string.Empty;
 
-        public string LongDescription { get; set; }= string.Empty;
+        public string LongDescription { get; set; } = string.Empty;
 
         [MaxLength(1000)]
-        public string TechnologyStack { get; set; }= string.Empty;
+        public string TechnologyStack { get; set; } = string.Empty;
 
         [MaxLength(500)]
-        public string GitHubUrl { get; set; }= string.Empty;
+        public string GitHubUrl { get; set; } = string.Empty;
 
         [MaxLength(500)]
-        public string LiveUrl { get; set; }= string.Empty;
+        public string LiveUrl { get; set; } = string.Empty;
 
         [MaxLength(500)]
-        public string ImageUrl { get; set; }= string.Empty;
+        public string ImageUrl { get; set; } = string.Empty;
 
         [MaxLength(500)]
-        public string ThumbnailUrl { get; set; }= string.Empty;
+        public string ThumbnailUrl { get; set; } = string.Empty;
 
         [ForeignKey("Category")]
-        public int CategoryId { get; set; }
-        public Category Category { get; set; }=null;
+        public int? CategoryId { get; set; }
+        public Category? Category { get; set; }
 
         public int Status { get; set; } = 1;
         public int DisplayOrder { get; set; } = 0;
@@ -46,13 +47,12 @@ namespace MostafaSaidPortfolio.Models
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
         [MaxLength(100)]
-        public string CreatedBy { get; set; }= string.Empty;
+        public string CreatedBy { get; set; } = string.Empty;
 
         [MaxLength(100)]
-        public string UpdatedBy { get; set; }= string.Empty;
+        public string UpdatedBy { get; set; } = string.Empty;
 
         public bool IsDeleted { get; set; } = false;
-        // Add to existing Project class
         public ICollection<Tag> Tags { get; set; } = new List<Tag>();
     }
 }

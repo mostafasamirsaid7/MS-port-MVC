@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using MostafaSaidPortfolio.Data;
 using MostafaSaidPortfolio.Models;
 using System;
@@ -11,9 +11,8 @@ namespace MostafaSaidPortfolio.Extensions
         public static IServiceCollection AddCustomDbContext(this IServiceCollection services, IConfiguration configuration)
         {
             var connectionString = configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlite(connectionString));
             return services;
         }
     }
 }
-
