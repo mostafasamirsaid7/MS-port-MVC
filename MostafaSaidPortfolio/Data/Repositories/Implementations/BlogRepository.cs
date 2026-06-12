@@ -78,15 +78,15 @@ namespace MostafaSaidPortfolio.Data.Repositories.Implementations
         public async Task<IEnumerable<BlogPost>> GetByCategoryAsync(int categoryId)
         {
             return await _connection.QueryAsync<BlogPost>(
-                $"SELECT {Columns} {Joins} WHERE b.\"Status\" = 1 AND b.\"IsDeleted\" = FALSE ORDER BY b.\"CreatedAt\" DESC",
-                transaction: _transaction);
+                $"SELECT {Columns} {Joins} WHERE b.\"CategoryId\" = @categoryId AND b.\"Status\" = 1 AND b.\"IsDeleted\" = FALSE ORDER BY b.\"CreatedAt\" DESC",
+                new { categoryId }, _transaction);
         }
 
-        public async Task<IEnumerable<BlogPost>> SearchAsync(string query)
+        public async Task<IEnumerable<BlogPost>> SearchAsync(string query, int limit = 50)
         {
             return await _connection.QueryAsync<BlogPost>(
-                $"SELECT {Columns} {Joins} WHERE b.\"Status\" = 1 AND b.\"IsDeleted\" = FALSE AND (b.\"Title\" ILIKE @q OR b.\"Summary\" ILIKE @q OR b.\"Content\" ILIKE @q) ORDER BY b.\"CreatedAt\" DESC",
-                new { q = $"%{query}%" }, _transaction);
+                $"SELECT {Columns} {Joins} WHERE b.\"Status\" = 1 AND b.\"IsDeleted\" = FALSE AND (b.\"Title\" ILIKE @q OR b.\"Summary\" ILIKE @q OR b.\"Content\" ILIKE @q) ORDER BY b.\"CreatedAt\" DESC LIMIT @limit",
+                new { q = $"%{query}%", limit }, _transaction);
         }
 
         public async Task<bool> IncrementViewCountAsync(Guid id)

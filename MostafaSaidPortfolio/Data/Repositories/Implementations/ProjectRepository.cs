@@ -61,15 +61,15 @@ namespace MostafaSaidPortfolio.Data.Repositories.Implementations
         public async Task<IEnumerable<Project>> GetByCategoryAsync(int categoryId)
         {
             return await _connection.QueryAsync<Project>(
-                $"SELECT {Columns} {Joins} WHERE p.\"IsDeleted\" = FALSE ORDER BY p.\"DisplayOrder\"",
-                transaction: _transaction);
+                $"SELECT {Columns} {Joins} WHERE p.\"CategoryId\" = @categoryId AND p.\"IsDeleted\" = FALSE ORDER BY p.\"DisplayOrder\", p.\"CreatedAt\" DESC",
+                new { categoryId }, _transaction);
         }
 
-        public async Task<IEnumerable<Project>> SearchAsync(string query)
+        public async Task<IEnumerable<Project>> SearchAsync(string query, int limit = 50)
         {
             return await _connection.QueryAsync<Project>(
-                $"SELECT {Columns} {Joins} WHERE p.\"IsDeleted\" = FALSE AND (p.\"Title\" ILIKE @q OR p.\"Description\" ILIKE @q OR p.\"TechnologyStack\" ILIKE @q) ORDER BY p.\"DisplayOrder\"",
-                new { q = $"%{query}%" }, _transaction);
+                $"SELECT {Columns} {Joins} WHERE p.\"IsDeleted\" = FALSE AND (p.\"Title\" ILIKE @q OR p.\"Description\" ILIKE @q OR p.\"TechnologyStack\" ILIKE @q) ORDER BY p.\"DisplayOrder\", p.\"CreatedAt\" DESC LIMIT @limit",
+                new { q = $"%{query}%", limit }, _transaction);
         }
 
         public async Task<int> CountActiveAsync()
